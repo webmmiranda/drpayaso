@@ -116,12 +116,8 @@ const LoginView = ({ onLogin }: { onLogin: (user: User, useSupabase: boolean) =>
     return (
         <div className="min-h-screen bg-slate-50 flex items-center justify-center p-4 font-sans">
             <div className="bg-white p-8 rounded-2xl shadow-xl max-w-2xl w-full text-center animate-in fade-in zoom-in-95 duration-300">
-                {config.logoUrl ? (
+                {config.logoUrl && (
                     <img src={config.logoUrl} alt="Logo" className="w-24 h-24 mx-auto mb-6 object-contain" />
-                ) : (
-                    <div className="w-20 h-20 bg-clown-red rounded-full flex items-center justify-center text-white mx-auto mb-6 shadow-lg">
-                        <span className="text-4xl">🤡</span>
-                    </div>
                 )}
                 
                 <h1 className="text-3xl font-bold text-gray-800 mb-2 font-display">{config.appName}</h1>

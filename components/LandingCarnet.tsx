@@ -52,10 +52,8 @@ export const LandingCarnet: React.FC<LandingCarnetProps> = ({ user, onEnter, onL
                     {/* Branding Header */}
                     <div className="bg-gray-50 pt-10 pb-4 px-6 text-center border-b border-gray-100">
                         <div className="flex justify-center items-center space-x-2 mb-1">
-                             {config.logoUrl ? (
+                             {config.logoUrl && (
                                 <img src={config.logoUrl} alt="Logo" className="w-8 h-8 object-contain" />
-                            ) : (
-                                <span className="text-2xl">🤡</span>
                             )}
                             <h2 className="font-bold text-gray-800 tracking-wider font-display uppercase text-sm">
                                 {config.appName}
